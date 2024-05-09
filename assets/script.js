@@ -95,3 +95,4 @@ article.forEach((item) => {
   // Append the card section to the news list
   newsList.appendChild(cardSection)
 })
+// tes
