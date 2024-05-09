@@ -6,7 +6,182 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Document</title>
+    <link
+      rel="icon"
+      href="assets/img/logo.svg"
+      type="image/x-icon"
+    />
+    <title>Travure</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/style.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <section id="hero">
+        <div class="logo">
+          <img
+            src="assets/img/logo.svg"
+            alt="logo"
+          />
+        </div>
+
+        <h1>Selamat datang di <span>Travure</span></h1>
+        <p>
+          Temukan keindahan yang belum terjamah di puncak-puncak
+          tertinggi, dan rasakan sensasi petualangan yang tak
+          terlupakan
+        </p>
+
+        <div id="contact">
+          <button class="contact-button">Hubungi Kami</button>
+          <div class="social-media">
+            <a href="#"><img src="assets/img/instagram.svg" /></a>
+            <a href="#"><img src="assets/img/facebook.svg" /></a>
+            <a href="#"><img src="assets/img/twitter.svg" /></a>
+          </div>
+        </div>
+      </section>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img
+            src="assets/img/logo.svg"
+            alt=""
+          />
+        </div>
+        <button
+          class="menu-button"
+          id="menu-button"
+        >
+          <img
+            src="assets/img/menu-bar.svg"
+            alt="menu"
+          />
+        </button>
+        <ul class="nav-link">
+          <li id="nav-item">
+            <a href="#hero">Beranda</a>
+          </li>
+          <li id="nav-item">
+            <a href="#destinasi">Destinasi</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="content">
+        <h2 class="section-title">Destinasi</h2>
+        <div class="container">
+          <article
+            class="destination-list"
+            id="destinasi"
+          >
+            <section class="card destination-1">
+              <img
+                src="assets/img/merbabu.jpg"
+                alt=""
+              />
+              <div class="card-info">
+                <h3>Gunung Merbabu</h3>
+                <p>
+                  Hutan pinus yang indah berpadu dengan padang rumput
+                  yang luas. Setiap langkah adalah perjalanan ke dalam
+                  keajaiban alam dan budaya. petualanganmu!
+                </p>
+                <a href="#">Lihat Selengkapnya ></a>
+              </div>
+            </section>
+            <section class="card destination-2">
+              <img
+                src="assets/img/rinjani.jpg"
+                alt=""
+              />
+              <div class="card-info">
+                <h3>Gunung Rinjani</h3>
+                <p>
+                  Tersembunyi di Pulau Lombok, Gunung Rinjani
+                  menawarkan perjalanan melalui hutan hijau dan savana
+                  luas yang memikat. Bersiaplah menyelami keindahan
+                  yang luar biasa di setiap langkahnya.
+                </p>
+                <a href="#">Lihat Selengkapnya ></a>
+              </div>
+            </section>
+            <section class="card destination-3">
+              <img
+                src="assets/img/semeru.jpg"
+                alt=""
+              />
+              <div class="card-info">
+                <h3>Gunung Semeru</h3>
+                <p>
+                  Pendakian melalui savana dan hutan tropis akan
+                  membawa Anda ke kawah berkabut yang mempesona.
+                  Tantangan dan keindahan bersatu dalam perjalanan
+                  ini.
+                </p>
+                <a href="#">Lihat Selengkapnya ></a>
+              </div>
+            </section>
+            <section class="card destination-4">
+              <img
+                src="assets/img/merapi.jpg"
+                alt=""
+              />
+              <div class="card-info">
+                <h3>Gunung Merapi</h3>
+                <p>
+                  Temukan keindahan magis gunung berapi aktif ini,
+                  dengan puncak yang menyuguhkan pemandangan tak
+                  tertandingi. Rasakan keberanian dan keajaiban alam
+                  bersama kami.
+                </p>
+                <a href="#">Lihat Selengkapnya ></a>
+              </div>
+            </section>
+          </article>
+          <aside class="news-list">
+            <a
+              href="#"
+              class="news-item"
+            >
+              <section>
+                <h3
+                  href="#"
+                  class="news-title"
+                >
+                  Peralatan wajib para pendaki
+                </h3>
+                <img
+                  src="assets/img/peralatan.jpg"
+                  alt="peralatan"
+                  class="news-image"
+                />
+                <p class="news-excerpt">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Vero, repudiandae libero!
+                </p>
+              </section>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; 2022 Travure. All rights reserved.</footer>
+    <script src="assets/script.js"></script>
+  </body>
 </html>
