@@ -1,6 +1,6 @@
 :root {
-  --dark-green: #3e5a4d;
-  --light-green: #7fb992;
+  --blue: #2e6eea;
+  --red: #dc2a2a;
   --gray: #d9d9d9;
   --dark-gray: #333333;
 }
@@ -16,6 +16,84 @@
 
 body {
   scroll-behavior: smooth;
+}
+
+header #hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header #hero .logo img {
+  width: 380px;
+  height: 380px;
+}
+
+header #hero h1 {
+  color: #d9d9d9;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+header #hero h1 span {
+  color: var(--red);
+}
+
+header #hero p {
+  max-width: 48%;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3.75rem;
+}
+
+header #hero #contact {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+header #hero #contact .contact-button {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  border-radius: 4.063rem;
+  padding: 1rem 2rem;
+  margin-right: 2.5rem;
+  transition: all 0.1s ease-in-out;
+}
+
+header #hero #contact .contact-button:hover {
+  transform: scale(1.1);
+}
+
+header #hero #contact .contact-button:active {
+  transform: scale(0.9);
+}
+
+header #hero #contact .social-media {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+header #hero #contact .social-media a:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
 }
 
 header .navbar {
@@ -51,7 +129,7 @@ header .navbar .nav-link li {
 
 header .navbar .nav-link li a {
   text-decoration: none;
-  color: var(--dark-green);
+  color: var(--blue);
   font-size: 26px;
   font-weight: 600;
   transition: all 0.1s ease-in-out;
@@ -60,18 +138,19 @@ header .navbar .nav-link li a {
 }
 
 header .navbar .nav-link li a:hover {
-  background-color: #7fb992;
+  background-color: var(--blue);
+  color: white;
 }
 
 main #content {
-  max-width: 1360px;
+  max-width: 1300px;
   margin-inline: auto;
   margin-top: 72px;
   margin-bottom: 136px;
 }
 
 main #content .section-title {
-  color: var(--dark-green);
+  color: var(--blue);
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 12px;
@@ -125,7 +204,7 @@ main #content .card .card-info .card-title {
   font-size: 1.7rem;
   line-height: 2rem;
   font-weight: 600;
-  color: var(--dark-green);
+  color: var(--blue);
   text-decoration: none;
   margin-bottom: 1rem;
   transition: opacity 0.1s ease-in-out;
@@ -153,7 +232,7 @@ main #content .card .card-info .card-date {
 }
 
 .badges .category-badge {
-  background-color: var(--light-green);
+  background-color: var(--red);
   color: white;
   font-size: 1rem;
   line-height: 1.25rem;
@@ -186,7 +265,7 @@ main #content .news-detail-image {
 }
 
 main #content .news-detail-title {
-  color: var(--dark-green);
+  color: var(--blue);
   font-size: 42px;
   text-align: center;
   font-weight: 700;
@@ -200,7 +279,7 @@ main #content .news-detail-meta {
 }
 
 main #content .category {
-  color: var(--light-green);
+  color: var(--red);
 }
 
 main #content .news-detail-date {
@@ -219,8 +298,8 @@ main #content .news-detail-content {
 
 footer {
   width: 100%;
-  background: var(--dark-green);
-  color: var(--light-green);
+  background: var(--blue);
+  color: var(--red);
   font-size: 18px;
   text-align: center;
   padding-block: 12px;
